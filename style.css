@@ -57,7 +57,7 @@ header .actions .get-started {
 }
 
 .cover {
-  width: 1512px;
+  width: 100%;
   height: 760px; 
   background-image: url("./images/rectangle.png");
   background-size: cover; 
@@ -103,7 +103,7 @@ select, input, button {
 
 button {
   background-color: #0b0d0c;
-  color: white;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -149,6 +149,7 @@ button {
 }
 
 .features {
+    width: 100%;
     padding: 50px 20px;
     background-color: #FDE24F;
     text-align: center;
@@ -173,7 +174,7 @@ button {
 
 .features-section {
   text-align: center;
-  background: white;
+  background: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
@@ -234,17 +235,17 @@ button {
   margin-top: 30px;
   padding: 10px 20px;
   font-size: 16px;
-  color: black;
-  background-color: white;
-  border: 2px solid black;
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #000000;
   border-radius: 20px;
   text-decoration: none;
   cursor: pointer;
 }
 
 .cta-button:hover {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 
@@ -373,3 +374,81 @@ footer .footer-item {
     max-width: 200px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Mobile Styles */
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+  
+  /* Features Section */
+  .features-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .feature {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  /* Buy/Sell Section */
+  .section {
+      margin-bottom: 20px;
+  }
+
+  .item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .item img {
+      margin-bottom: 10px;
+  }
+
+  .item .details {
+      margin: 0;
+  }
+
+  /* CTA Section */
+  .ctas {
+      padding: 30px 10px;
+      font-size: 1.5em;
+  }
+
+  .ctas button {
+      width: 100%;
+  }
+
+  /* Footer */
+  footer {
+      text-align: center;
+      padding: 20px 10px;
+  }
+
+  footer .footer-grid {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  footer .footer-item {
+      text-align: center;
+  }
+}
